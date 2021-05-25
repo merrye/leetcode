@@ -1,4 +1,4 @@
-# **496. 下一个更大元素 I**
+# **[496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)**
 
 ## 给你两个 没有重复元素 的数组 nums1 和 nums2 ，其中nums1 是 nums2 的子集。
 
