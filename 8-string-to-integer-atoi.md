@@ -50,7 +50,7 @@ int myAtoi(char * s){
 		{
 			hasNumber = 1;
 			result = result * 10 + (*s - '0');
-            if ((int) result != result) return flag == -1 ? (INT_MIN): (INT_MAX);
+			if ((int) result != result) return flag == -1 ? (INT_MIN): (INT_MAX);
 		}
 		else if (*s == '+' || *s == '-')
 		{
