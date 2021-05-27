@@ -30,6 +30,31 @@ public:
         dfs(root->right);
         nums.push_back(root->val);
     }
+    void bfs (TreeNode* root) {
+        stack<TreeNode*> s;
+        TreeNode* r;
+        while (root || !s.empty()) {
+            if (root) {
+                s.push(root);
+                root = root->left;
+            }
+            else {
+                root = s.top();
+                if (root->right && root->right != r) {
+                    root = root->right;
+                    s.push(root);
+                    root = root->left;
+                }
+                else {
+                    root = s.top();
+                    s.pop();
+                    r = root;
+                    nums.push_back(root->val);
+                    root = nullptr;
+                }
+            }
+        }
+    }
     vector<int> postorderTraversal(TreeNode* root) {
         dfs(root);
         return nums;
