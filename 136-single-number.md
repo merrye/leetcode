@@ -11,7 +11,7 @@
 输出: 1
 ```
 
-### **示例 1：**
+### **示例 2：**
 
 ```c
 输入: [4,1,2,1,2]
@@ -22,8 +22,6 @@
 
 ```c++
 class Solution {
-private:
-    vector<int> nums;
 public:    
     int singleNumber(vector<int>& nums) {
         int res = 0;
